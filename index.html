@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms Kostyantyn Zabishniy</title>
+  </head>
+  <body leftmargin="10%" rightmargin="10%">
+    <header>
+      <h1 align="center">Зразок форм HTML. Забішний Костянтин</h1>
+      <hr />
+    </header>
+    <main>
+      <section id="volonteur">
+        <form method="post">
+          <fieldset>
+            <legend>
+              <h2>
+                <span> Анкета рекрута</span>
+              </h2>
+            </legend>
+            Ім'я<br />
+            <input type="text" name="firstname" size="50" /><br />
+            Прізвище<br />
+            <input type="text" name="lastname" size="50" /><br />
+            Побатькові<br />
+            <input type="text" name="surname" size="50" /><br />
+            Дата народження<br />
+            <input type="date" name="bday" /><br />
+            E-mail<br />
+            <input type="email" name="persona1_email" size="50" /><br />
+            Телефон<br />
+            <input type="tel" name="persona1_email" size="50" /><br />
+            Чи проходили ви службу в ЗСУ?<br />
+            <input type="radio" name="zsu_check" value="yes" checked /> Так
+            <input type="radio" name="zsu_check" value="no" /> Ні <br />
+            Чи є бойовий досвід?<br />
+            <input type="radio" name="fight_check" value="yes" checked /> Так
+            <input type="radio" name="fight_check" value="no" /> Ні <br />
+            Яку зброю вам необхідно спорядити?<br />
+            <input type="checkbox" name="weapon1" value="AK74" /> АКМС 74<br />
+            <input type="checkbox" name="weapon2" value="RPG7" /> РПГ 7<br />
+            <input type="checkbox" name="weapon3" value="SVD" /> СГД<br />
+            <input type="checkbox" name="weapon4" value="PK" /> ПК<br />
+            Додаткове обладнання<br />
+            <input list="contracts" name="contract" />
+            <datalist id="contracts">
+              <option value="Trijicon MRO"> </option>
+              <option value="Trijicon MGRS"> </option>
+              <option value="ПГО 7В"> </option>
+              <option value="ПСО 1"> </option>
+            </datalist><br />
+            <textarea cols="80" rows="10" name="wishes" placeholder="Побажання" id="wishes"></textarea><br />
+            <button type="reset">Стерти</button>
+            <button type="submit">Відправити</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div id="contactsLinks">
+        <h2 align="center">
+            КОНТАКТИ
+          </h2>
+        <nav class="navBK" align="center" id="navBottomBK">
+            <a href="mailto:kostas.zabishny@gmail.com">Написати мені листа</a>
+            |
+            <a
+              href="https://www.facebook.com/kostyantyn.zabishniy"
+              target="blank"
+              >Я у Фейсбуці</a
+            >
+            |
+            <a href="https://www.peoplesproject.com/" target="blank"
+              >Допомога армії</a
+            >
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
